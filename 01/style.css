@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+header {
+  flex-basis: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.logo {
+  flex-basis: 100%;
+}
+
+nav {
+  flex-basis: 100%;
+  margin-top: 20px;
+}
+
+.menu {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.menu__item {
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 10px;
+  font-size: 20px;
+  position: relative;
+  padding: 10px 20px;
+}
+
+.menu__item:hover > .menu__dropdown {
+  display: block;
+}
+
+.menu__dropdown {
+  position: absolute;
+  display: none;
+  padding-top: 10px;
+  left: 0;
+}
+
+.dropdown__item {
+  list-style-type: none;
+  border: 1px solid black;
+  background-color: royalblue;
+  color: white;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+article {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+
+.article__title {
+  flex-basis: 100%;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.article__content {
+  flex-basis: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.article__image {
+  flex-basis: 50%;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.article__author {
+  flex-basis: 50%;
+}
+
+.article__date {
+  flex-basis: 50%;
+}
+
+.article__table {
+  flex-basis: 100%;
+  margin-top: 20px;
+}
+
+.comments {
+  flex-basis: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.addComment {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+}
+
+.addComment__title {
+  flex-basis: 50%;
+  padding: 10px;
+}
+
+.addComment__text {
+  flex-basis: 100%;
+}
+
+.latestComments {
+  flex-basis: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.latestComments__title {
+  flex-basis: 100%;
+  text-align: left;
+}
+
+.latestComments__item {
+  flex-basis: 100%;
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.latestComments__content {
+  margin-bottom: 10px;
+  flex-basis: 100%;
+}
+
+.latestComments__author {
+  flex-basis: 50%;
+}
+
+.latestComments__date {
+  flex-basis: 50%;
+}
+
+footer {
+  flex-basis: 100%;
+  margin-top: 50px;
+  text-align: center;
+}

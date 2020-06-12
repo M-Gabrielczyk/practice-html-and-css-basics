@@ -1,12 +1,129 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="logo">
+          <img src="https://picsum.photos/id/234/1000/200" alt="" />
+        </div>
+        <nav>
+          <ul class="menu">
+            <li class="menu__item">Start</li>
+            <li class="menu__item">
+              Oferta
+              <ul class="menu__dropdown dropdown">
+                <li class="dropdown__item">Oferta1</li>
+                <li class="dropdown__item">Oferta2</li>
+                <li class="dropdown__item">Oferta3</li>
+                <li class="dropdown__item">Oferta4</li>
+              </ul>
+            </li>
+            <li class="menu__item">Serwis</li>
+            <li class="menu__item">Kontakt</li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <article class="article row">
+          <h2 class="article__title">Pierwszy Artykuł</h2>
+          <p class="article__content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+            reprehenderit quae dolorem nisi consectetur, aliquam officia. Id,
+            explicabo neque voluptatibus perspiciatis tenetur sunt ducimus
+            soluta minus cumque laboriosam voluptatum consequuntur! Lorem ipsum
+            dolor sit amet consectetur, adipisicing elit. Voluptates fugit
+            voluptatibus voluptatum, neque molestias quaerat ipsam perspiciatis
+            omnis possimus dolorem eos odit animi necessitatibus quidem,
+            temporibus nesciunt! Inventore, nostrum quis. Lorem ipsum dolor sit
+            amet consectetur, adipisicing elit. Porro aliquid, incidunt ex non
+            totam deleniti rem ipsum id placeat ipsam modi corrupti optio nulla
+            quidem voluptatum sapiente error fugiat quis! Lorem ipsum dolor sit,
+            amet consectetur adipisicing elit. Commodi eligendi necessitatibus
+            adipisci fugiat expedita, voluptatem et deserunt odio reiciendis
+            iste earum omnis incidunt consequuntur. Nesciunt reprehenderit
+            beatae sapiente ipsa accusamus.
+          </p>
+          <img
+            class="article__image"
+            src="https://picsum.photos/400/400"
+            alt=""
+          />
+          <p class="article__author">Autor: Michał Gabrielczyk, 10.06.2020</p>
+
+          <table class="article__table">
+            <caption>
+              Poprzednie artykuły
+            </caption>
+            <colgroup>
+              <col span="3" style="background: gray;" />
+            </colgroup>
+            <thead>
+              <tr>
+                <th scope="col">Tytuł</th>
+                <th scope="col">Autor</th>
+                <th scope="col">Data dodania</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Drugi Artykuł</td>
+                <td>Jan Kowalski</td>
+                <td>19-01-2020</td>
+              </tr>
+              <tr>
+                <td>Trzeci Artykuł</td>
+                <td>Jan Kowalski</td>
+                <td>21-01-2020</td>
+              </tr>
+              <tr>
+                <td>Czwarty Artykuł</td>
+                <td>Jan Kowalski</td>
+                <td>21-03-2020</td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+
+        <section class="comments">
+          <form class="addComment">
+            <h2 class="addComment__title">Dodaj komentarz</h2>
+            <div>
+              <textarea name="" class="text" cols="50" rows="10"></textarea>
+            </div>
+          </form>
+          <div class="latestComments">
+            <h2 class="latestComments__title">Ostatnio dodane:</h2>
+            <div class="latestComments__item">
+              <p class="latestComments__content">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Molestiae cupiditate veniam facere. Ratione harum molestias quos
+                itaque laboriosam aperiam facere, fugiat distinctio dicta.
+              </p>
+              <p class="latestComments__author">Autor: Jan Kowalski</p>
+              <p class="latestComments__date">Dodano: 21-02-2020</p>
+            </div>
+            <div class="latestComments__item">
+              <p class="latestComments__content">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Molestiae cupiditate veniam facere. Ratione harum molestias quos
+                itaque laboriosam aperiam facere, fugiat distinctio dicta.
+              </p>
+
+              <p class="latestComments__author">Autor: Jan Kowalski</p>
+              <p class="latestComments__date">Dodano: 21-02-2020</p>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer>&copy Michał Gabrielczyk 2020</footer>
+    </div>
+  </body>
 </html>
